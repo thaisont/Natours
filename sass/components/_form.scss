@@ -70,7 +70,7 @@
     }
 
     &__radio-input {
-        display: none;
+        opacity: 0;
     }
     
     &__radio-label {
@@ -111,6 +111,10 @@
     &__radio-input:checked ~ &__radio-label &__radio-button::after {
         opacity: 1;
 
+    }
+
+    &__radio-input:focus ~ &__radio-label &__radio-button::after {
+        opacity: 1;
     }
 
 }
